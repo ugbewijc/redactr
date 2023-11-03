@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redactr</title>
+    <link rel="stylesheet" href="./styles/css/index.css">
+    <script defer src="./styles/js/index.js"></script>
+</head>
+<body>
+    <main class="container">
+        <section class="accordion">
+            <details>
+                <summary class="accordion-tab"><strong>REDACTR</strong> - Scramble some words from a body of text Content</summary>
+                <div class="accordion-details">
+                    <p>
+                        <a href="https://docs.google.com/document/d/17savyCVbaHNNaK08yEEVLVqdf9SD-pJ6zCwgKkctEdo/edit">SOURCE</a>
+                    </p>                    
+                    <p>
+                        Redact app help people to safely share content on social media by scrambling portions of the text 
+                        they don’t want the world to read/see. 
+                        A user will write/paste some content into a form field (Content to scarmble field) and 
+                        then specify the words that must be scrambled (words to scramble).
+                        Note that the user can specify more than one word (separated by space) to be scrambled.
+                        user can also specify what to use in replacing the words so that the app can do the scrambling with what the user provides,
+                        be it asterisks, question marks, dashes, underscores, or even other words.
+                    </p>
+                    <p>
+                        After clicking a <strong>“Redact Now”</strong> button, Redact app scans through the original text and replaces the specified words to be scrambled with asterisks (i.e ****)
+                    </p>
+                        
+                </div>
+       </details>
+    </section>
+        </section>
+        <section class="content">
+            <form action="" method="post" id="scramble_form" class="content-form">
+                <div class="fields">
+                    <label for="content">Content to scarmble</label>
+                    <textarea class="input-field" name="content" id="content" cols="30" rows="10" required></textarea>
+                </div>
+                <div class="fields">
+                    <label for="scramble_words">Words to Scramble</label>
+                    <input class="input-field" type="text" name="scramble_words" id="scramble_words" required>
+                </div>
+                <div class="fields">
+                    <label for="replacement_word">Replacement words</label>
+                    <input class="input-field" type="text" name="replacement_word" id="replacement_word">
+                </div>
+                <div class="fields">
+                    <input class="submit-button" type="submit" value="Redact Now">
+                </div>
+            </form>
+        </section>
+        <section>
+            <div class="scramble-content" id="result"></div>
+        </section>
+    </main>
+</body>
+</html>
